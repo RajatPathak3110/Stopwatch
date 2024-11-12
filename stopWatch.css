@@ -1,0 +1,266 @@
+/* General body styling for center alignment and dark background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;  /* Dark background for better focus */
+  color: #f0f0f0;
+  background-image: url(image.jpg) ;
+  background-size: 100% auto;
+}
+
+/* Stopwatch container styling */
+.stopwatch {
+  text-align: center;
+  background-color: #1f1f1f; /* Darker background for stopwatch area */
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Stopwatch display styling */
+#display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00d1b2;  /* Teal color for a modern look */
+}
+
+/* Button styling */
+button {
+  margin: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button#startStopBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+button#resetBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+button#lapBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+/* Styling for lap list */
+#lapsList {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+}
+
+#lapsList li {
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #333;
+  color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Scrollbar styling for lap list */
+#lapsList::-webkit-scrollbar {
+  width: 8px;
+}
+
+#lapsList::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 8px;
+}
+
+#lapsList::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+/* Input styling for countdown timer */
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 8px;
+  color: #333;
+}
+
+input[type="number"]::placeholder {
+  color: #aaa;
+}
+
+button#countdownBtn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  #display {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: auto;
+}
+/* To-Do List Styles */
+.todo-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--container-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+#todoInput {
+  padding: 8px;
+  width: calc(100% - 100px);
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addTodoBtn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+}
+
+#todoList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#todoList li {
+  padding: 8px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: var(--button-text-color);
+  border-radius: 5px;
+}
+
+#todoList li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #ff4444;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+.todo-container {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: var(--container-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+#todoInput {
+  padding: 8px;
+  width: calc(100% - 100px);
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addTodoBtn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+}
+
+#todoList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#todoList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 8px 0;
+  background-color: #333;
+  color: var(--button-text-color);
+  border-radius: 5px;
+}
+
+#todoList li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #ff4444;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+.file-input {
+  padding: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+.file-name {
+  margin-left: 10px;
+  color: #fff;
+}
+.image-preview {
+  margin-left: 10px;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
